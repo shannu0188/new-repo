@@ -24,13 +24,13 @@ pipeline{
         }
         stage('Build and tag'){
             steps{
-                sh 'docker build -t manjukolkar007/puneetrajkumar .'
+                sh 'docker build -t shannu888/shanmukha .'
             }
         }
         stage('Containerisation'){
             steps{
                 sh '''
-                docker run -it -d --name c7 -p 9007:8080 manjukolkar007/puneetrajkumar 
+                docker run -it -d --name c7 -p 9007:8080 shannu888/shanmukha 
                 '''
             }
         }
